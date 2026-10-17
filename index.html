@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="COMP6710 Group 2：基于原始文献的强化学习与人类决策中英文辩论稿，五人分工、证据范围与逐点反驳。">
+  <meta name="theme-color" content="#f3f0fb">
+  <title>Group 2 · 强化学习与人类决策</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#scripts">跳到辩论稿 / Skip to scripts</a>
+  <header class="topbar">
+    <a class="brand" href="#top">Group 2 <span>COMP6710</span></a>
+    <div class="tools">
+      <label class="sr-only" for="language">阅读语言 / Reading language</label>
+      <select id="language"><option value="both">中英对照</option><option value="en">English</option><option value="zh">中文</option></select>
+      <button id="print" type="button">打印 / Print</button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="intro">
+      <div class="intro-heading"><span class="team-stamp" aria-hidden="true">G2</span><div>
+        <h1><span class="zh">人类决策，<br>能被奖励解释吗？</span><span class="en" lang="en">Can rewards explain<br>human decisions?</span></h1>
+        <p class="subtitle"><span class="zh">强化学习辩论 · 五人发言与反驳手册</span><span class="en" lang="en">The reinforcement learning debate · Five voices, one case</span></p>
+      </div></div>
+      <div class="position">
+        <span class="position-label"><span class="zh">我们的立场</span><span class="en" lang="en">Our position</span></span>
+        <p class="zh">简单 RL 不适合作为人类决策的充分、通用解释。</p>
+        <p class="en" lang="en">Simple RL is insufficient as a complete, general explanation of human decision-making.</p>
+        <div class="position-note"><span class="zh">承认奖惩学习的作用；不把特定模型的局限，推广成所有 RL 都无效。</span><span class="en" lang="en">Acknowledge learning from rewards; keep claims within the models and tasks actually studied.</span></div>
+      </div>
+      <div class="reading-note"><p class="zh">英文主稿每人约 45–60 秒，实际以排练为准。中英文为替代版本，无需连续朗读。以下为根据研究组织的台词，并非论文原句。</p><p class="en" lang="en">Each English script is roughly 45–60 seconds; rehearse to confirm. Choose one language for delivery. Scripts paraphrase the research and are not quotations.</p></div>
+    </section>
+    <section id="scripts" class="workspace" aria-label="五人辩论稿 / Five speaker scripts">
+      <aside class="navigation"><p class="nav-label"><span class="zh">选择你的发言</span><span class="en" lang="en">Choose your part</span></p><nav id="speaker-nav" aria-label="发言人 / Speakers"></nav><a class="closing-link" href="#closing"><span class="zh">代表收尾稿</span><span class="en" lang="en">Closing statement</span><span aria-hidden="true">↘</span></a></aside>
+      <div id="speaker-panels"></div>
+    </section>
+    <section id="closing" class="closing">
+      <div class="closing-header"><h2><span class="zh">把五个观点，收成一个结论。</span><span class="en" lang="en">Bring the five arguments together.</span></h2><span><span class="zh">代表收尾 · 约 30 秒</span><span class="en" lang="en">Closing · About 30 seconds</span></span></div>
+      <p class="zh">我们并不否认人类会从奖励中学习。我们的反对意见是：这种相似性，不足以证明简单 RL 适合作为人类决策的通用解释。奖励推断存在歧义，记忆与任务理解影响选择，探索包含信息目标，而相似行为也可能来自不同机制。因此，Group 1 需要提供能够区分替代解释、预测新行为的证据，才能证明其模型适合所讨论的人类决策。</p>
+      <p class="en" lang="en">We do not deny that humans learn from rewards. Our objection is that this similarity does not establish simple RL as a general explanation of human decision-making. Rewards are ambiguous, memory and task understanding matter, exploration can seek information, and different mechanisms can produce similar behaviour. Group 1 therefore needs evidence that distinguishes competing explanations and predicts new human choices.</p>
+    </section>
+    <section class="guardrails"><h2><span class="zh">现场引用，守住这三条。</span><span class="en" lang="en">Three boundaries for the debate.</span></h2><ul><li><span class="zh">不说“RL 没有记忆”。循环 RL 可以整合历史信息。</span><span class="en" lang="en">Do not say RL has no memory. Recurrent RL can integrate history.</span></li><li><span class="zh">不说“RL 只能随机探索”。我们的批评针对单纯 ε-greedy。</span><span class="en" lang="en">Do not say RL only explores randomly. Our critique targets epsilon-greedy alone.</span></li><li><span class="zh">60.6% 与 68.3% 是特定研究的行为预测准确率，不是所有 RL 的能力上限。</span><span class="en" lang="en">60.6% and 68.3% are results from one study, not universal performance limits.</span></li></ul><a href="https://arxiv.org/abs/1507.06527" target="_blank" rel="noopener noreferrer">Hausknecht &amp; Stone · Deep Recurrent Q-Learning for Partially Observable MDPs</a></section>
+  </main>
+  <footer><span>Group 2 · COMP6710 Advanced Machine Learning</span><span class="zh">文献核验：2026-10-17 · 课堂辩论资料，非教师原文</span><span class="en" lang="en">Sources checked 17 Oct 2026 · Student debate material</span></footer>
+  <div id="notice" role="status" aria-live="polite"></div>
+</body>
+</html>
